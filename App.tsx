@@ -1,31 +1,14 @@
 import React from 'react';
-import {SafeAreaView, Text, StyleSheet} from 'react-native';
+import { SafeAreaView } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Main from './src/pages/main/Main'
 
-declare const global: {HermesInternal: null | {}};
-
-const App = () => {
+const App = (): JSX.Element => {
   return (
-      <SafeAreaView>
-        <Text style={styles.text}>Hello World!</Text>
-      </SafeAreaView>
-  );
+    <SafeAreaView>
+      <Main />
+    </SafeAreaView>
+  )
 };
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 15,
-    marginVertical: 10,
-    marginHorizontal: 10,
-    fontFamily: 'Montserrat-Regular',
-  }
-});
 
 export default App;
